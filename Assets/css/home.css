@@ -42,13 +42,13 @@ a:hover{
     background-color: #092a49;
     color: white;
     padding: 20px 10px;
-ul{
     display: flex;
-    list-style: none;
     gap: 10px;
     justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    
 
-}
 a{
     color: white;
     font-size: 20px;
@@ -66,8 +66,8 @@ a:hover{
 img{
     height: 670px;
        width: 100%; 
-       object-fit: cover; 
-}
+        object-fit: cover; 
+} 
 }
 .content{
     position: absolute;
@@ -75,6 +75,7 @@ img{
     left: 15rem;
     color: white;
     h2{
+        color: white;
         font-size: 60px;
         font-family: 'Oswald';
         font-weight: 200;
@@ -93,22 +94,23 @@ img{
     position: absolute;
 
 }
+
 /* card section */
 .card{
-        width: 68%;
+        
         background-color: white;
         margin: 0 auto;
         
         display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        justify-content: space-evenly;
+        /* flex-wrap: wrap; */
         h2{
             font-family: 'Oswald';
             font-weight: 300;
         }
    
     .team{
-        flex-basis: 23%;
+        width: 200px;
         margin: 50px 0px;
         text-align: center;
         padding: 30px 0px;
@@ -220,7 +222,7 @@ img{
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        gap: 40px 40px;
+        /* gap: 40px 40px; */
         
     }
         
@@ -243,7 +245,7 @@ img{
 
 /* for button */
    .context{
-    margin-left: 10rem;
+    margin-left: 7rem;
     padding-top:40px;
     button{
         font-size: 15px;
@@ -254,7 +256,7 @@ img{
 
    /* last section */
    .last{
-    padding: 50px;
+    margin: 30px;
     h2{
         margin-left: 40px;
         padding: 10px;
@@ -274,19 +276,18 @@ img{
 
 /* footer starts */
 footer{
-    background-color: #092a49;
+    background-color: #092a49;  
 
    }
 .container{
-    color: white;
     display: flex;
-    margin: 0 auto;
-    justify-content: space-around;
-    
+padding-left: 30px;
+    margin: 30px;
+    justify-content: space-between;
+    color: white;
          p i{
        margin: 10px;
      }
-
     .social i{
         color: white;
         padding: 20px 20px 10px 11px;
@@ -295,9 +296,9 @@ footer{
             position: relative;
         }
             input{
-             padding: 20px 10px;
+            padding: 20px 10px;
             width: 50%;
-            margin-top:20px;
+            margin-top: 20px;
             border-radius: 40px;
            
         }
@@ -313,57 +314,96 @@ footer{
             background-color: #092a49;
             color: #007bff;
             
+        } 
+    }
+    .bottom-footer{
+        display: flex;
+        justify-content: space-around;
+        p{
+            color: #787879;  
+        }
+    a{
+        text-decoration: none;
+        color: white;
+    }  
+} 
+/* using media query for responsive websites */
+@media(max-width:768px){
+    .topbar{
+        display: none;
+    }
+    .navbar{
+        flex-direction: column;
+        width: auto;
+    }
+    /* for home section */
+    .img1{
+        background-size: 100%;
         }
         
+        .content{
+        position: absolute;
+        top: 30rem;
+        left: 1rem;
+        /* text-align: center; */
+        h2{
+            font-size: 40px;
+        }
+        
+        }
+
+    /* for card section */
+    .card{
+        flex-wrap: wrap;
         
     }
-    /* using media query for responsive websites */
-     @media(max-width:768px){
-        
-        /* body{
-            font-size: 14px;
-        } */
-        /* for home section */
-        .content{
-            h2{
-                font-size: 45px;
-                text-align: center;
-            }
-            
+    /* for feature section */
+   .feature{
+    flex-wrap: wrap;
+    .right{
+        padding-top: 20px;
+        width: 80%;
+    }
+   }
+   /* for services section */
+    .card1{
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    .team1{
+        flex-basis: 40%;
+        /* margin: 30px; */
+         /* padding: 10px;  */
+    }
+   /* for last section */
+     .last{
+        h2{
+            margin-left: 50px;
         }
-        /* for card section */
-        /* .card{
-            flex-wrap: wrap;
-            .team{
-                flex-basis: 48%;
-            }
-        } */
-        /* for feature section */
-       .feature{
-        flex-wrap: wrap;
-        .right{
-            padding-top: 20px;
-            width: 80%;
+    } 
+}
+        /*  for footer section */ 
+        footer{
+            width: fit-content;
         }
-       }
-       /* for services section */
-       .card1{
-        flex-wrap: wrap;
-        
-        .team1{
-            flex-basis: 25%;
-            /* margin: 30px; */
-            padding: 10px;
-        }
-       }
-       }
-       /* for last section */
-       /* .last{
-       } */
-/* for footer section */
-       .container{
-        flex-wrap: wrap;
-       }
+   .container{
+    flex-wrap: wrap;
+    input{
+        width: 70%;
+    }
+   } 
+}
+@media(max-width:320px){
+    /* .card{
+       
+    } */
+
+
+}
+    
+   
+
+       
        
 
     

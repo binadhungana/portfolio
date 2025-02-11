@@ -44,13 +44,10 @@ a:hover{
     background-color: #092a49;
     color: white;
     padding: 20px 10px;
-ul{
     display: flex;
-    list-style: none;
     gap: 10px;
     justify-content: flex-end;
 
-}
 a{
     color: white;
     font-size: 20px;
@@ -60,8 +57,25 @@ a:hover{
     color:#007bff;;
 }
 } 
+.team {
+    margin: 50px;
+    /* padding: 50px; */
+h2{
+    color:#6c757d;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+h3{
+    font-size: 40px;
+    padding-left: 50px;
+    color:#6c757d;
+      font-family: 'Oswald'; 
+    
+}
+}
 /* navbar ends */
-.container{
+
+.container1{
  background-color: white;
 display: flex;
 padding: 40px;
@@ -72,18 +86,101 @@ margin: 50px;
     position: relative;
 }
 img{
-    width: 250px;
+    width: 100%;
+    height: auto;
     border-radius: 30px;
 }
 .content{
      position: absolute; 
-     top: 14rem;
-      left: 2rem;  
+     top: 25rem;
+      left: 8rem;  
     border: 2px solid black;
     background-color: white;
     border-radius: 15px;
     text-align: center;
-    padding: 5px 40px;
+    padding: 20px 40px;
     border-style: none;
     box-shadow: 0px 0px 15px 1px rgb(170, 170, 170);
+}
+/* footer starts */
+footer{
+    background-color: #092a49;  
+
+   }
+.container{
+    display: flex;
+padding-left: 30px;
+    /* margin:2rem 14rem; */
+    justify-content: space-between;
+    color: white;
+         p i{
+       margin: 10px;
+     }
+    .social i{
+        color: white;
+        padding: 20px 20px 10px 11px;
+    }
+            .form{
+            position: relative;
+        }
+            input{
+            padding: 20px 10px;
+            width: 50%;
+            margin-top: 20px;
+            border-radius: 40px;
+           
+        }
+       button{
+             padding: 10px 15px;
+            border-radius: 30px;
+             position: absolute;
+             left: 30em; 
+             top: 2.2em;
+            
+        }
+        button:hover{
+            background-color: #092a49;
+            color: #007bff;
+            
+        } 
+    }
+    .bottom-footer{
+        display: flex;
+        justify-content: space-around;
+        p{
+            color: #787879;  
+        }
+    a{
+        text-decoration: none;
+        color: white;
+    }  
+} 
+/* for responsive websites */
+@media(max-width:768px){
+    .navbar{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .topbar{
+        display: none;
+    }
+}
+@media(max-width:1476px){
+    .content{
+        top: 22rem;
+    }
+}
+@media(max-width:1376px) {
+    .content{
+        top: 20rem;
+    }
+}
+@media(max-width:1276px){
+    .content{
+        top: 19rem;
+        left:5rem;
+    }
+    .container1{
+    flex-wrap: wrap;
+    }
 }

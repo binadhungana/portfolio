@@ -42,13 +42,11 @@ a:hover{
     background-color: #092a49;
     color: white;
     padding: 20px 10px;
-ul{
     display: flex;
-    list-style: none;
     gap: 10px;
     justify-content: flex-end;
 
-}
+
 a{
     color: white;
     font-size: 20px;
@@ -200,10 +198,17 @@ footer{
             background-color: #092a49;
             color: #007bff;
             
-        }
-        
-        
+        }  
     }
+    .bottom-footer{
+        p{
+            color: #787879;
+        }
+    a{
+        text-decoration: none;
+        color: white;
+    }  
+}
     
 
 

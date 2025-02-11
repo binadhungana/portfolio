@@ -44,13 +44,10 @@ a:hover{
     background-color: #092a49;
     color: white;
     padding: 20px 10px;
-ul{
     display: flex;
-    list-style: none;
     gap: 10px;
     justify-content: flex-end;
 
-}
 a{
     color: white;
     font-size: 20px;
@@ -65,11 +62,12 @@ a:hover{
     p{
         color:#6c757d;
         font-size: 20px;
-         margin: 120px 0px 20px 250px;
+         margin: 50px;
     }
     h2{
         font-size: 40px;
-       margin: 10px 0px 20px 300px;
+       /* margin: 50px; */
+       margin-left: 140px;
         color:#6c757d;
         font-family: 'Oswald'; 
         font-weight: 350;
@@ -86,7 +84,8 @@ a:hover{
 
     }
     .service-items{
-        flex-basis: 23%;
+       /* width: 100%; */
+       flex-basis: 23%;
         margin: 10px 0px;
         text-align: center;
         padding: 30px 0px;
@@ -147,20 +146,52 @@ footer{
             background-color: #092a49;
             color: #007bff;
             
-        }
-        
+        }  
         
     }
+    .bottom-footer{
+        p{
+            color: #787879;
+        }
+    a{
+        text-decoration: none;
+        color: white;
+    } 
+} 
     /* for responsive */
-    /* @media(max-width:768px){
-        .topbar,.navbar{
-            flex-direction: column;
-            text-align: center;
-        }
+    @media(max-width:1000px){
         .container1{
-            grid-template-columns: 1fr;
+        flex-wrap: wrap;
+    }
+    
+    .service {
+        p{
+        margin: 10px;
+    }
+    h2{
+        margin-left: 15px;
+        font-size: 20px;
+    }
+}
+    }
+    @media(max-width:950px){
+        .service-items{
+        flex-basis: 40%;
         }
     }
-     */
+
+    @media(max-width:768px){
+        .navbar{
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .topbar{
+            display: none;
+        }
+        .service-items{
+            flex-basis: 100%;
+        }
+    }
+    
 
     
