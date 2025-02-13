@@ -150,6 +150,8 @@ footer{
         
     }
     .bottom-footer{
+        display: flex;
+        justify-content: space-around;
         p{
             color: #787879;
         }
@@ -161,6 +163,16 @@ footer{
     /* for responsive */
     @media(max-width:1000px){
         .container1{
+        flex-wrap: wrap;
+    }
+    .container{
+        flex-wrap: wrap;
+    }
+    .right-content{
+        padding-left: 10px;
+    }
+
+    .bottom-footer{
         flex-wrap: wrap;
     }
     

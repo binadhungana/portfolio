@@ -79,7 +79,7 @@ h3{
  background-color: white;
 display: flex;
 padding: 40px;
-gap: 20px; 
+gap: 30px; 
 margin: 50px;
 }
 .member{
@@ -156,6 +156,91 @@ padding-left: 30px;
     }  
 } 
 /* for responsive websites */
+@media(max-width:1476px){
+    .content{
+        top: 22rem;
+    }
+}
+@media(max-width: 1376px){
+    .content{
+        top: 21.2rem;
+        left: 5rem;
+    }
+}
+@media(max-width: 1325px){
+    .content{
+        top: 20rem;
+    }
+}
+@media(max-width: 1269px){
+    .content{
+        top: 18rem;
+    }
+}
+@media(max-width: 1173px){
+    .content{
+        top:17rem ;
+
+    }
+}
+@media(max-width: 1105px){
+    .content{
+        top: 16rem;
+        left: 4rem;
+    }
+}
+@media(max-width: 1060px){
+    .team{
+        margin: 20px;
+    }
+    .content{
+        top: 48rem;
+        left: 19rem;
+    }
+    .container1{
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+    .container{
+        flex-wrap: wrap;
+    }
+    .bottom-footer{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:972px){
+    .content{
+        top: 46rem;
+    }
+}
+@media(max-width:946px){
+   
+    .content{
+        top: 44rem;
+    }
+}
+@media(max-width:913px){
+    .content{
+    top: 42rem;
+}
+}
+@media(max-width:870px){
+    .content{
+        top: 40rem;
+    }
+}
+@media(max-width:848px){
+    .content{
+        top: 38rem;
+        left: 17rem;
+    }
+}
+@media(max-width:845px)and(min-width:700px){
+    .content{
+        top: 36rem;
+    }
+}
+
 @media(max-width:768px){
     .navbar{
         flex-wrap: wrap;
@@ -165,22 +250,12 @@ padding-left: 30px;
         display: none;
     }
 }
-@media(max-width:1476px){
-    .content{
-        top: 22rem;
-    }
-}
-@media(max-width:1376px) {
-    .content{
-        top: 20rem;
-    }
-}
-@media(max-width:1276px){
+/* @media(max-width:1276px){
     .content{
         top: 19rem;
         left:5rem;
     }
-    .container1{
+    /* .container1{
     flex-wrap: wrap;
-    }
-}
+    } */
+/* }  */

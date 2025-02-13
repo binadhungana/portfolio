@@ -82,7 +82,7 @@ h2{
      margin: 50px;
 
 }
-.card{
+.cards{
     display: grid;
     gap:20px;
     /* margin-right: 20px; */
@@ -90,21 +90,22 @@ h2{
 }
 
 
-    .info{
+    .data{
             display: flex;
            border: 2px solid rgba(0, 0, 0, 0.073);
            width: 100%;
            height: auto;
           
            i{
-            border: 2px solid rgba(0, 0, 0, 0.081);
+            border: 2px solid rgba(16, 1, 1, 0.081);
             margin: 30px;
+            padding: 20px;
             font-size: 25px;
-            width:50px;
+            color: rgb(48, 85, 165); 
             height: 20px;
             text-align: center;
-            padding: 20px;
-            color: rgb(56, 94, 175); 
+            width:50px;
+           
         }
         div {
             margin:30px;
@@ -118,7 +119,7 @@ h2{
         font-family: "Oswald",sans-serif;
          }
     }
-    .info:hover{
+    .data:hover{
           box-shadow:1px 1px 10px rgba(128, 128, 128, 0.429);
 
     }
@@ -219,17 +220,20 @@ h2{
     .container{
         flex-wrap: wrap;
     }
+    .right-content{
+        padding-left: 10px;
+    }
     .bottom-footer{
         flex-wrap: wrap;
     }
     
 }
 @media(max-width:387px){
-    .info div{
+    .data div{
         margin: 10px;
 
     }
-    .info i{
+    .data i{
         padding: 10px;
         font-size: 20px;
         margin: 15px;
