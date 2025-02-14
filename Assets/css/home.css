@@ -23,6 +23,7 @@ gap: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
+
    a:first-child{
     border-left: 1px solid white;
    }
@@ -72,7 +73,7 @@ img{
 .content{
     position: absolute;
     top: 25rem;
-    left: 15rem;
+    left: 10rem;
     color: white;
     h2{
         color: white;
@@ -97,10 +98,9 @@ img{
 
 /* card section */
 .card{
-        
+        width: 68%;
         background-color: white;
         margin: 0 auto;
-        
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
@@ -110,10 +110,10 @@ img{
         }
    
     .team{
-        width: 200px;
-        margin: 50px 0px;
+        flex-basis: 15%;
+        margin-top: 50px;
         text-align: center;
-        padding: 30px 0px;
+        padding: 30px 40px;
         border: 2px solid rgb(236, 233, 233);
         box-shadow: 0px 0px 15px 3px rgb(236, 233, 233);
         h3{
@@ -133,7 +133,8 @@ img{
         margin:5rem;
         display:flex;
         justify-content: space-around; 
-         gap:3rem;
+        gap: 3rem;
+         
            img{
             height: 400px;
             width: 450px;
@@ -152,19 +153,18 @@ img{
         }
          .row{
             display: flex;
-            padding-top: 20px;
-            gap: 120px;
+            /* justify-content: space-around; */
+            gap: 10rem;
+            align-items: center;
             i{
-                padding: 8px;
                 color: #007bff;
                 align-self: center;
             }
             .icon1{
                 display: flex;
-                font-size: 30px;
-                padding-top: 10px;
-               
+                font-size: 30px;    
             } 
+
             h3{
                 font-size: 35px;
                 color: #007bff;
@@ -178,8 +178,6 @@ img{
            }
          }
     }
-
-
 }
 /* service section */
 .services {
@@ -200,7 +198,6 @@ img{
         font-family: 'Oswald'; 
         font-weight: 350;  
     }
-    
         h3{
             
              font-family: 'Oswald'; 
@@ -209,18 +206,14 @@ img{
     
     }
     .card1{
-
         width: 68%;
         background-color: white;
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
-        flex-wrap: wrap;
-        /* gap: 40px 40px; */
-        
+        flex-wrap: wrap; 
+        gap: 10px;   
     }
-        
-   
     .team1{
         flex-basis: 23%;
         text-align: center;
@@ -261,7 +254,7 @@ img{
    }
    .clients{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     
 img{
@@ -278,7 +271,7 @@ footer{
     display: flex;
 padding-left: 30px;
     margin: 30px;
-    justify-content: space-between;
+    justify-content: space-around;
     color: white;
          p i{
        margin: 10px;
@@ -323,7 +316,40 @@ padding-left: 30px;
     }  
 } 
 /* using media query for responsive websites */
-@media(max-width:768px){
+
+   @media(max-width:1005px){
+    .team{
+        flex-basis:45%;
+     } 
+    .content{
+        width: auto;
+        h2{
+            font-size: 40px;
+        }
+    }
+    .feature{
+        flex-wrap: wrap;
+        margin: 2rem;
+        img{
+            height: auto;
+            width:100%;
+        }
+    }
+    .services{
+     .service{
+        margin: 10px;
+        padding-left: 20px;
+        h2{
+            font-size: 30px;
+        }  
+    }
+    .team1{
+       flex-basis:45%;
+       padding: 10px;
+    } 
+}    
+   }
+   @media(max-width:768px){
     .topbar{
         display: none;
     }
@@ -332,29 +358,25 @@ padding-left: 30px;
         width: auto;
     }
    } 
-   @media(max-width:1005px){
-    .feature{
-        flex-wrap: wrap;
-        margin: 2rem;
-        img{
-            height: auto;
-            width: 100%;
-        }
-    }
-
-    .services .service{
-        margin: 10px;
-        padding-left: 20px;
-    }
-    .card1{
-        gap: 10px;
-    }
-    .team1{
-       flex-basis: 42%;
-       padding: 10px;
-    }  
-   
+   @media(max-width:647px){
+    .content{
+        top: 25rem;
+        left: 8rem; 
    }
+}
+@media(max-width:492px){
+    .row{
+        flex-wrap: wrap;
+        gap: 1px;
+       
+    }
+    .container{
+        flex-wrap: wrap;
+    }
+    .bottom-footer{
+        flex-wrap: wrap;
+    }
+}
     
    
 
