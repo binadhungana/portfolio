@@ -103,7 +103,7 @@ img{
         
         display: flex;
         justify-content: space-evenly;
-        /* flex-wrap: wrap; */
+        flex-wrap: wrap;
         h2{
             font-family: 'Oswald';
             font-weight: 300;
@@ -130,19 +130,16 @@ img{
     
     /* features section */
     .feature{
-        margin: 50px;
+        margin:5rem;
         display:flex;
         justify-content: space-around; 
-         margin-left:80px;
+         gap:3rem;
            img{
             height: 400px;
             width: 450px;
         }       
     .right{
-        width:40%;
         text-align: justify;
-        margin-right: 5rem;
-         
          h3{
             color: #a3a3a4;
             font-size: 20px;
@@ -165,7 +162,6 @@ img{
             .icon1{
                 display: flex;
                 font-size: 30px;
-                /* gap: 10px; */
                 padding-top: 10px;
                
             } 
@@ -176,11 +172,9 @@ img{
             }
             p{
                 font-size: 20px;
-
             }
            .text{
             padding: 8px;
-
            }
          }
     }
@@ -258,7 +252,7 @@ img{
    .last{
     margin: 30px;
     h2{
-        margin-left: 40px;
+        margin-left:4rem;
         padding: 10px;
         font-family: 'Oswald',sans-serif;
         font-weight: 300;
@@ -268,6 +262,7 @@ img{
    .clients{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     
 img{
     width: 80px;
@@ -336,70 +331,30 @@ padding-left: 30px;
         flex-direction: column;
         width: auto;
     }
-    /* for home section */
-    .img1{
-        background-size: 100%;
-        }
-        
-        .content{
-        position: absolute;
-        top: 30rem;
-        left: 1rem;
-        /* text-align: center; */
-        h2{
-            font-size: 40px;
-        }
-        
-        }
-
-    /* for card section */
-    .card{
-        flex-wrap: wrap;
-        
-    }
-    /* for feature section */
-   .feature{
-    flex-wrap: wrap;
-    .right{
-        padding-top: 20px;
-        width: 80%;
-    }
-   }
-   /* for services section */
-    .card1{
-    flex-wrap: wrap;
-    gap: 20px;
-    
-    .team1{
-        flex-basis: 40%;
-        /* margin: 30px; */
-         /* padding: 10px;  */
-    }
-   /* for last section */
-     .last{
-        h2{
-            margin-left: 50px;
-        }
-    } 
-}
-        /*  for footer section */ 
-        footer{
-            width: fit-content;
-        }
-   .container{
-    flex-wrap: wrap;
-    input{
-        width: 70%;
-    }
    } 
-}
-@media(max-width:320px){
-    /* .card{
-       
-    } */
+   @media(max-width:1005px){
+    .feature{
+        flex-wrap: wrap;
+        margin: 2rem;
+        img{
+            height: auto;
+            width: 100%;
+        }
+    }
 
-
-}
+    .services .service{
+        margin: 10px;
+        padding-left: 20px;
+    }
+    .card1{
+        gap: 10px;
+    }
+    .team1{
+       flex-basis: 42%;
+       padding: 10px;
+    }  
+   
+   }
     
    
 
