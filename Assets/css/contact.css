@@ -182,11 +182,9 @@ h2{
     }  
 }
 /* using media query for responsive websites */ 
-@media (max-width:1030px) {
-        
+@media (max-width:1030px) {    
     .map {
-        width: 100%;
-     
+        width: 100%;  
     }
 }
 @media (max-width:1019px){
@@ -212,8 +210,7 @@ h2{
         flex-wrap: wrap;
     }
     .map iframe{
-        width: 100%;
-        
+    width: 100%;        
     }
 }
 @media (max-width:675px) {
@@ -225,13 +222,11 @@ h2{
     }
     .bottom-footer{
         flex-wrap: wrap;
-    }
-    
+    }    
 }
 @media(max-width:387px){
     .data div{
         margin: 10px;
-
     }
     .data i{
         padding: 10px;

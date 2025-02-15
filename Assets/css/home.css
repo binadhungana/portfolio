@@ -103,11 +103,13 @@ img{
         margin: 0 auto;
         display: flex;
         justify-content: space-evenly;
+        gap: 10px;
         flex-wrap: wrap;
         h2{
             font-family: 'Oswald';
             font-weight: 300;
         }
+       
    
     .team{
         flex-basis: 15%;
@@ -318,7 +320,7 @@ padding-left: 30px;
 /* using media query for responsive websites */
 
    @media(max-width:1005px){
-    .team{
+    .card .team{
         flex-basis:45%;
      } 
     .content{
@@ -335,6 +337,17 @@ padding-left: 30px;
             width:100%;
         }
     }
+    .context{
+        margin-left: 2rem;
+    }
+    .last{
+        margin: 10px;
+   
+     h2{
+        margin-left: 0.7rem;
+    }
+}
+    
     .services{
      .service{
         margin: 10px;
@@ -343,10 +356,6 @@ padding-left: 30px;
             font-size: 30px;
         }  
     }
-    .team1{
-       flex-basis:45%;
-       padding: 10px;
-    } 
 }    
    }
    @media(max-width:768px){
@@ -357,19 +366,24 @@ padding-left: 30px;
         flex-direction: column;
         width: auto;
     }
+    
    } 
+   
    @media(max-width:647px){
     .content{
         top: 25rem;
         left: 8rem; 
    }
+   .card1 .team1{
+    flex-basis:100%;
+ } 
 }
 @media(max-width:492px){
-    .row{
+    .feature .right .row{
         flex-wrap: wrap;
-        gap: 1px;
-       
+        gap: 0px;
     }
+   
     .container{
         flex-wrap: wrap;
     }

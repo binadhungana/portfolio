@@ -62,16 +62,14 @@ a:hover{
     p{
         color:#6c757d;
         font-size: 20px;
-         margin: 50px;
+        margin: 40px;
     }
     h2{
         font-size: 40px;
-       /* margin: 50px; */
-       margin-left: 140px;
+       margin-left: 8rem;
         color:#6c757d;
         font-family: 'Oswald'; 
-        font-weight: 350;
-        
+        font-weight: 350;   
     }
     }
     .container1{
@@ -84,7 +82,6 @@ a:hover{
 
     }
     .service-items{
-       /* width: 100%; */
        flex-basis: 23%;
         margin: 10px 0px;
         text-align: center;
@@ -100,7 +97,6 @@ a:hover{
             font-size: 17.5px;
             padding: 10px 20px;
             color: #595959;
-            /* font-family: 'oswald'; */
         } 
     }
     .service-items:hover{
@@ -162,10 +158,16 @@ footer{
 } 
     /* for responsive */
     @media(max-width:1000px){
-        .container1{
-        flex-wrap: wrap;
+        .service {
+            p{
+            margin: 14px;
+        }
+        h2{
+            margin-left: 15px;
+            font-size: 40px;
+        }
     }
-    .container{
+    /* .container{
         flex-wrap: wrap;
     }
     .right-content{
@@ -174,17 +176,9 @@ footer{
 
     .bottom-footer{
         flex-wrap: wrap;
-    }
+    } */
     
-    .service {
-        p{
-        margin: 10px;
-    }
-    h2{
-        margin-left: 15px;
-        font-size: 20px;
-    }
-}
+    
     }
     @media(max-width:950px){
         .service-items{
