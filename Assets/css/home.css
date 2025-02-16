@@ -271,24 +271,32 @@ footer{
    }
 .container{
     display: flex;
-padding-left: 30px;
-    margin: 30px;
     justify-content: space-around;
+    padding-top:2rem ;
+    margin-left: 16rem;
     color: white;
-         p i{
-       margin: 10px;
+    gap: 20rem;
+         p {
+       margin: 10px 0px;
+       padding: 6px 0px;
+    
+     }
+     i{
+        margin-right: 20px;
+     }
+     h2{
+        font-family: "Oswald",sans-serif;
+        font-weight: 300;
      }
     .social i{
         color: white;
-        padding: 20px 20px 10px 11px;
     }
             .form{
             position: relative;
         }
             input{
             padding: 20px 10px;
-            width: 50%;
-            margin-top: 20px;
+            width: 65%;
             border-radius: 40px;
            
         }
@@ -296,8 +304,8 @@ padding-left: 30px;
              padding: 10px 15px;
             border-radius: 30px;
              position: absolute;
-             left: 30em; 
-             top: 2.2em;
+             left: 28em; 
+             top: 1em;
             
         }
         button:hover{
@@ -309,6 +317,7 @@ padding-left: 30px;
     .bottom-footer{
         display: flex;
         justify-content: space-around;
+        padding: 10px 0px;
         p{
             color: #787879;  
         }
@@ -318,11 +327,22 @@ padding-left: 30px;
     }  
 } 
 /* using media query for responsive websites */
+@media(max-width:1440px) and (min-width:1377px){
+    .form button{
+        left: 24em;
+    }
+}
 
    @media(max-width:1005px){
     .card .team{
         flex-basis:45%;
      } 
+     footer .container{
+        flex-wrap: wrap;
+        gap: 0px;
+        margin-left: 1rem;
+        
+    }
     .content{
         width: auto;
         h2{
@@ -356,7 +376,8 @@ padding-left: 30px;
             font-size: 30px;
         }  
     }
-}    
+} 
+   
    }
    @media(max-width:768px){
     .topbar{

@@ -128,31 +128,37 @@ h2{
    /* contact section ends */
    /* footer starts */
    footer{
-    background-color: #092a49;
+    background-color: #092a49;  
 
    }
 .container{
-    color: white;
     display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-     /* margin: 60px 0px 60px 100px; 
-     */
-         p i{
-       margin: 10px;
+    justify-content: space-around;
+    padding-top:2rem ;
+    margin-left: 16rem;
+    color: white;
+    gap: 20rem;
+         p {
+       margin: 10px 0px;
+       padding: 6px 0px;
+    
      }
-
+     i{
+        margin-right: 20px;
+     }
+     h2{
+        font-family: "Oswald",sans-serif;
+        font-weight: 300;
+     }
     .social i{
         color: white;
-        padding: 20px 20px 10px 11px;
     }
-            /* .form{
+            .form{
             position: relative;
         }
             input{
-             padding: 20px 10px;
-            width: 50%;
-            margin-top:20px;
+            padding: 20px 10px;
+            width: 65%;
             border-radius: 40px;
            
         }
@@ -160,27 +166,29 @@ h2{
              padding: 10px 15px;
             border-radius: 30px;
              position: absolute;
-             left: 30em; 
-             top: 2.2em;
+             left: 28em; 
+             top: 1em;
             
         }
         button:hover{
             background-color: #092a49;
             color: #007bff;
             
-        }        */
+        } 
     }
     .bottom-footer{
         display: flex;
         justify-content: space-around;
+        padding: 10px 0px;
         p{
-            color: #787879;
+            color: #787879;  
         }
     a{
         text-decoration: none;
         color: white;
     }  
-}
+} 
+
 /* using media query for responsive websites */ 
 @media (max-width:1030px) {    
     .map {
